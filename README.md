@@ -51,3 +51,4 @@ Example sorted word table into separate buckets. Rows are the least common lette
 - Use mmap to load the file.  I'm on Windows so I can't, but I hear it can be an additional 10% speedup.
 - Multithread the file parsing too.  There's 370k words in the words list. If thread overhead isn't too much, this is easily parallelable.
 - Get someone like [stew675](https://github.com/stew675/standup5x5/) or [miniBill](https://github.com/miniBill/parkerrust) to implemented it along side all of their other hyper micro optimizations. <sup><sub>hint hint, nudge nudge, wink wink</sub></sup>. 
+- I suspect that ordering my top bits based on frequency alone may not be optimal. Just like the optimal wordle strategy should consider the combined effect of multiple guesses together instead of each guess individually.
